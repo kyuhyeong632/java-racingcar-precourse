@@ -1,8 +1,10 @@
 package racingcar;
 
 public class ValidationUtils {
+
     public void valiName(String name){
-        if(name.length() > 6){
+
+        if(name.length() >= 6){
             throw new IllegalArgumentException(ErrorMessages.LONG_NAME);
         }
     }
